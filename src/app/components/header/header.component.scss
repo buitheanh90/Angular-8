@@ -1,0 +1,63 @@
+.top-header {
+	font-size: 14px;
+	color: #7f786d;
+	a {
+		font-size: 14px;
+		color: #7f786d;
+		text-decoration: none;
+		i {
+			transition: .3s;
+		}
+		&:hover {
+			i {
+				color: #ff4c3b;
+			}
+		}
+	}
+}
+
+.main-menu {
+	ul {
+		li {
+			cursor: pointer;
+			&:hover {
+				a {
+					color: #ff4c3b;
+				}
+			}
+			a {
+				color: #222;
+				text-decoration: none;
+				transition: .2s;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.absolute-logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.menu-right {
+	ul {
+		li {
+			span {
+				position: absolute;
+				background: #ff4c3b;
+				width: 20px;
+				height: 20px;
+				color: #fff;
+				border-radius: 20px;
+				text-align: center;
+				font-size: 12px;
+				line-height: 14px;
+				font-weight: 600;
+				top: 25%;
+				right: -8px;
+				padding: 3px;
+			}
+		}
+	}
+}
