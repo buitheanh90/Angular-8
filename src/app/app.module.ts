@@ -4,9 +4,9 @@ import { AppRoutingModule } from "./app-routing.module";
 import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from "./app.component";
-import { HeaderComponent } from "./components/header/header.component";
-import { HomeComponent } from "./components/home/home.component";
-import { FooterComponent } from "./components/footer/footer.component";
+import { HeaderComponent } from "./components/layout/header/header.component";
+import { HomeComponent } from "./components/pages/home/home.component";
+import { FooterComponent } from "./components/layout/footer/footer.component";
 
 import { ProductService } from "./service/product.service";
 
@@ -15,17 +15,22 @@ import { MatTabsModule } from "@angular/material";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, FooterComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatTabsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-  ],
-  providers: [ProductService],
-  bootstrap: [AppComponent],
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		HomeComponent,
+		FooterComponent,
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		BrowserAnimationsModule,
+		MatTabsModule,
+		FormsModule,
+		ReactiveFormsModule,
+		HttpClientModule,
+	],
+	providers: [ProductService],
+	bootstrap: [AppComponent],
 })
 export class AppModule {}
