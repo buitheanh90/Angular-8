@@ -173,7 +173,72 @@
 
 							</div>
 						</mat-tab>
-						<mat-tab label="BEST SELLERS"> BEST SELLERS </mat-tab>
+						<mat-tab label="BEST SELLERS">
+							<div class="tab-content">
+								<div class="row m-0">
+									<!--product-->
+									<div class="product-box position-relative" *ngFor="let item of product">
+										<div class="lable-block">
+											<span class="label3">New</span>
+											<span class="label4">on sale</span>
+										</div>
+										<div class="font">
+											<a href="">
+
+												<span *ngFor="let image of item.images">
+													<img class="w-100" src="{{ image.url }}" alt="">
+												</span>
+											</a>
+											<div>{{ item.name }}</div>
+										</div>
+
+										<!---->
+										<ul class="product-thumb-list">
+											<li>
+												<a href=""><img src="../../../assets/img/home/products/25.jpg"
+														alt=""></a>
+											</li>
+											<li>
+												<a href=""><img src="../../../assets/img/home/products/6.jpg"
+														alt=""></a>
+											</li>
+											<li>
+												<a href=""><img src="../../../assets/img/home/products/39.jpg"
+														alt=""></a>
+											</li>
+										</ul>
+										<!---->
+										<div class="cart-info">
+											<a href="">
+												<i class="ti-shopping-cart" title="Add to cart"></i>
+											</a>
+											<a href="">
+												<i class="ti-heart" title="Add to Wishlist"></i>
+											</a>
+											<a href="">
+												<i class="ti-search" title="Quick View"></i>
+											</a>
+											<a href="">
+												<i class="ti-reload" title="Compare"></i>
+											</a>
+										</div>
+									</div>
+									<!---->
+
+
+									<!-- <ul class="list-group">
+										<li class="list-group-item" *ngFor="let item of product">
+											{{ item.name }}
+											<span *ngFor="let images of item.images">
+												<img src="{{ images.url }}" alt="">
+											</span>
+										</li>
+									</ul> -->
+
+								</div>
+
+							</div>
+						</mat-tab>
 						<mat-tab label="FEATURED PRODUCTS"> FEATURED PRODUCTS </mat-tab>
 						<mat-tab label="ON SALE"> ON SALE </mat-tab>
 					</mat-tab-group>
