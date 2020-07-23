@@ -15,6 +15,7 @@ import { ValidateComponent } from "./components/pages/validate/validate.componen
 
 //services
 import { ProductService } from "./service/product.service";
+import { AuthService } from "./service/auth.service";
 
 //material
 import { MatTabsModule } from "@angular/material";
@@ -37,7 +38,7 @@ import { MatTabsModule } from "@angular/material";
 		ReactiveFormsModule,
 		HttpClientModule,
 	],
-	providers: [ProductService],
+	providers: [ProductService, AuthService],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}
